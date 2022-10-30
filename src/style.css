@@ -224,6 +224,7 @@ button:hover {
 
 .station-chooser {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   width: 100%;
   align-items: center;
@@ -819,5 +820,11 @@ button:hover {
   .service-chooser {
     align-items: center;
     justify-content: center;
+  }
+  input {
+    font-size: 16px;
+  }
+  .train-direction {
+    font-size: 0.5rem;
   }
 }

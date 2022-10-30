@@ -43,6 +43,7 @@ function App() {
   );
   useEffect(() => {
     document.title = "yorkie";
+    window.scrollTo(0, 0);
     // Escape key
     window.addEventListener("keydown", (e) => {
       if (e.key == "Escape") {
