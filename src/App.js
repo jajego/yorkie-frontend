@@ -65,7 +65,7 @@ function App() {
       try {
         axios
           .request({
-            url: "http://localhost:5000/",
+            url: "http://api.yorkie.city",
             method: "get",
             headers: {
               "User-Id": userId,
@@ -84,7 +84,7 @@ function App() {
     try {
       axios
         .request({
-          url: "http://localhost:5000/trains",
+          url: "http://api.yorkie.city/trains",
           method: "get",
           headers: {
             "User-Id": userId,
