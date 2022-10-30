@@ -121,20 +121,12 @@ export default function Monitor({
         .filter((line) => line !== clickedLine)
         .join("");
       setClickedLines(newClickedLines);
-      console.log(`${clickedLine} has been removed clickedLines`);
     } else {
       const newClickedLines = clickedLines + clickedLine;
       setClickedLines(newClickedLines);
-      console.log(`${clickedLine} has been added to clickedLines`);
     }
     const trainDivs =
       e.target.parentElement.parentElement.parentElement.lastChild.childNodes;
-    trainDivs.forEach((div) => console.log(div));
-
-    console.log(e.target.textContent);
-    console.log(
-      e.target.parentElement.parentElement.parentElement.lastElementChild
-    );
 
     e.target.style.opacity == 0.5
       ? (e.target.style.opacity = 1.0)
@@ -180,11 +172,7 @@ export default function Monitor({
       <div key="goku" className="monitor-trains">
         {orderedTrains.length == 0 ? (
           <div className="placeholder">
-            There are no{" "}
-            <span className={`icon-mini subway-icon mta-${getColor(line)}`}>
-              {line}
-            </span>{" "}
-            trains arriving within 30 minutes.
+            There are no trains arriving within 30 minutes.
           </div>
         ) : (
           orderedTrains.map((train, index) => (

@@ -16,7 +16,6 @@ const createMonitor = async (line, station, otherService, userId) => {
       other_service: otherService,
     },
   });
-  console.log(response);
   return response.data;
 };
 
@@ -28,7 +27,6 @@ const getMonitors = async (userId) => {
       "User-Id": userId,
     },
   });
-  console.log("Monitors via getMonitors");
   return monitors;
 };
 

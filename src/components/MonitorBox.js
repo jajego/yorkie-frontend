@@ -18,8 +18,9 @@ export default function MonitorBox({
   const heights = [];
 
   for (let trainSet of trains) {
-    // console.log(trainSet['trains'].length * 45)
-    heights.push(trainSet["trains"].length * 55 + 85);
+    trainSet["trains"].length > 0
+      ? heights.push(trainSet["trains"].length * 62 + 84)
+      : heights.push(170);
   }
   return (
     <div className="monitor-box">

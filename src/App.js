@@ -43,7 +43,6 @@ function App() {
   );
   useEffect(() => {
     document.title = "yorkie";
-    window.scrollTo(0, 0);
     // Escape key
     window.addEventListener("keydown", (e) => {
       if (e.key == "Escape") {
@@ -111,7 +110,7 @@ function App() {
     // CORE LOOP
     const interval = setInterval(() => {
       setCreated(true);
-    }, 50000);
+    }, 60000);
     return () => clearInterval(interval);
   }, []);
 
@@ -130,6 +129,7 @@ function App() {
       setTrains([]);
       setUsername("");
       setPassword("");
+      window.scrollTo(0, 0);
     } catch (exception) {
       alert("Wrong credentials");
     }
@@ -158,6 +158,7 @@ function App() {
       localStorage.setItem("user", JSON.stringify(registeredUser));
       setUsername("");
       setPassword("");
+      window.scrollTo(0, 0);
     } catch (exception) {
       alert("Invalid credentials");
     }

@@ -237,9 +237,7 @@ export default function AddMonitor({
         `Can't monitor more than 4 stations at a time. Please delete one and try again.`
       );
     }
-    console.log(
-      `Creating new monitor with line ${line} at ${station} with other service ${otherService}`
-    );
+
     const newMonitor = await monitorService.createMonitor(
       line,
       station,
