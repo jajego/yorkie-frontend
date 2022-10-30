@@ -11,6 +11,5 @@ root.render(
   <React.StrictMode>
     <Header />
     <App />
-    <Footer />
   </React.StrictMode>
 );

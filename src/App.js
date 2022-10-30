@@ -42,6 +42,7 @@ function App() {
     JSON.parse(localStorage.getItem("trains"))
   );
   useEffect(() => {
+    document.title = "yorkie";
     // Escape key
     window.addEventListener("keydown", (e) => {
       if (e.key == "Escape") {
@@ -65,7 +66,7 @@ function App() {
       try {
         axios
           .request({
-            url: "http://api.yorkie.city",
+            url: "https://api.yorkie.city",
             method: "get",
             headers: {
               "User-Id": userId,
@@ -84,7 +85,7 @@ function App() {
     try {
       axios
         .request({
-          url: "http://api.yorkie.city/trains",
+          url: "https://api.yorkie.city/trains",
           method: "get",
           headers: {
             "User-Id": userId,

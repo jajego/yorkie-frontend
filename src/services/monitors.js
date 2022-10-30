@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "http://api.yorkie.city/create";
+const baseUrl = "https://api.yorkie.city/create";
 
 const createMonitor = async (line, station, otherService, userId) => {
   const response = await axios.request({
@@ -22,7 +22,7 @@ const createMonitor = async (line, station, otherService, userId) => {
 
 const getMonitors = async (userId) => {
   const monitors = await axios.request({
-    url: "http://api.yorkie.city",
+    url: "https://api.yorkie.city",
     method: "get",
     headers: {
       "User-Id": userId,
@@ -34,7 +34,7 @@ const getMonitors = async (userId) => {
 
 const removeMonitor = async (userId, monitorId) => {
   const monitors = await axios.request({
-    url: `http://api.yorkie.city/${monitorId}/delete`,
+    url: `https://api.yorkie.city/${monitorId}/delete`,
     method: "post",
     headers: {
       "User-Id": userId,

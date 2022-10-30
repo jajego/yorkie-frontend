@@ -179,6 +179,7 @@ export default function AddMonitor({
         >
           {line}
         </div>
+        <div className="dropdown-title">Select a station</div>
         <Dropdown options={options} onChange={handleOptionChange} />
       </div>
       <div className="service-chooser-bottom">
@@ -191,9 +192,6 @@ export default function AddMonitor({
   const serviceChooser = () => (
     <div className="service-chooser-wrapper">
       <div className="service-chooser">
-        {service.length > 1 && (
-          <div className="bottom-text">Also @ platform:</div>
-        )}
         <ul className="other-services">
           {service &&
             service

@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "http://api.yorkie.city/auth/login";
+const baseUrl = "https://api.yorkie.city/auth/login";
 
 const login = async (credentials) => {
   const response = await axios.request({
