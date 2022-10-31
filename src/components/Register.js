@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Register({handleRegister, username, setUsername, password, setPassword, handleClose}) {
-    console.log(`username is ${username}`)
   return (
     <div className="register-wrapper">
         <h1>Register</h1>

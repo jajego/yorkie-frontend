@@ -86,7 +86,6 @@ export default function Train({
         color = "gray";
         break;
       default:
-        console.log("defualt path");
         color = "black";
         break;
     }

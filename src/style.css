@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .App {
@@ -441,6 +442,13 @@ button:hover {
   border-radius: 50%;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-family: "Courier New", Courier, monospace;
+  transition-duration: 0.5s;
+}
+
+.remove-monitor-btn:hover {
+  color: rgb(111, 111, 111);
 }
 
 .monitor-trains {
@@ -676,6 +684,11 @@ button:hover {
     padding-bottom: 170px;
   }
 
+  .login-wrapper,
+  .register-wrapper {
+    padding-bottom: 115px;
+  }
+
   .big-train {
     transform: scale(0.4);
   }
@@ -769,16 +782,7 @@ button:hover {
     /* width: 50px; */
     flex-direction: column;
     flex-wrap: nowrap;
-  }
-
-  .remove-monitor-btn {
-    font-size: 1.25rem;
-    font-family: "Courier New", Courier, monospace;
-    transition-duration: 0.5s;
-  }
-
-  .remove-monitor-btn:hover {
-    color: rgb(111, 111, 111);
+    padding-bottom: 100px;
   }
 
   .monitor-wrapper {
