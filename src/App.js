@@ -19,7 +19,9 @@ import PlaceholderLoading from "react-placeholder-loading";
 // gotta add CORS
 
 function App() {
-  const [monitors, setMonitors] = useState([]);
+  const [monitors, setMonitors] = useState(
+    JSON.parse(localStorage.getItem("monitors"))
+  );
   const [userId, setUserId] = useState(localStorage.getItem("userId"));
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
