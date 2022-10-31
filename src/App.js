@@ -22,6 +22,7 @@ function App() {
   const [monitors, setMonitors] = useState(
     JSON.parse(localStorage.getItem("monitors"))
   );
+
   const [userId, setUserId] = useState(localStorage.getItem("userId"));
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
